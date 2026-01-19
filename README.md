@@ -18,5 +18,9 @@ This adaptor is tightly coupled with what is required by Tacker.
 ## 🗂 Variables that need to be configured as per cluster and heal job :
 
 - manifest/adapter-configmap.yaml
-
+  - devtron_url : devtron's URL for example - https://devtron.example.com
+  - ciPipelineId : CI Pipeline ID corresponding to heal job
+  - ciPipelineMaterialsId : CI Pipeline's Material ID corresponding to heal job
+  - GitCommitId : Github Commit ID corresponding to heal job
 - manifest/adapter-credentials.yaml
+  - devtron_api_token : devtron api token with permissions to be able to trigger devtron heal job 
